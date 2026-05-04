@@ -1,0 +1,11 @@
+# Ignore large raw datasets (exceeds GitHub 100MB limit)
+IPL.csv
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+__pycache__/
+
+# (Optional) You can choose to ignore the generated models if you want users to train their own
+# rf_model.pkl
+# encoders.pkl
+# match_history.pkl
