@@ -1,0 +1,7 @@
+Split,Model,Accuracy,Precision,Recall,F1,ROC-AUC
+Time-Based (>= 2024),Logistic Regression,0.4634,0.4634,0.4634,0.4634,0.448
+Time-Based (>= 2024),Random Forest,0.4482,0.4479,0.4451,0.4465,0.445
+Time-Based (>= 2024),Gradient Boosting,0.4909,0.491,0.5,0.4955,0.485
+Stratified Random (80/20),Logistic Regression,0.5278,0.5263,0.5556,0.5405,0.5124
+Stratified Random (80/20),Random Forest,0.5128,0.5121,0.5427,0.527,0.508
+Stratified Random (80/20),Gradient Boosting,0.5363,0.5347,0.5598,0.547,0.532

@@ -1,11 +1,21 @@
-# Ignore large raw datasets (exceeds GitHub 100MB limit)
+# Large raw ball-by-ball dataset (excluded due to GitHub file size limits)
 IPL.csv
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Python byte-code and virtual environments
 __pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
 
-# (Optional) You can choose to ignore the generated models if you want users to train their own
-# rf_model.pkl
-# encoders.pkl
-# match_history.pkl
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

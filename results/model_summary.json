@@ -1,0 +1,48 @@
+{
+    "train_test_split": {
+        "method": "Time-Based Split (Train: Seasons 2008-2023, Test: Seasons 2024-2026)",
+        "train_matches": 1005,
+        "test_matches": 164,
+        "train_symmetric_rows": 2010,
+        "test_symmetric_rows": 328,
+        "stratified_split": "80% Train, 20% Test (Stratified on Match Outcome)"
+    },
+    "baselines": {
+        "all_toss_acc": 0.5183917878528657,
+        "all_bwr_acc": 0.5320786997433704,
+        "test_toss_acc": 0.5426829268292683,
+        "test_bwr_acc": 0.4695121951219512,
+        "test_count": 164
+    },
+    "cv_scores": {
+        "Logistic Regression": {
+            "mean_acc": 0.5325373134328358,
+            "std_acc": 0.03082586422310588,
+            "mean_auc": 0.5579270031365839,
+            "std_auc": 0.043997014298312806
+        },
+        "Random Forest": {
+            "mean_acc": 0.5026865671641791,
+            "std_acc": 0.03634443284829713,
+            "mean_auc": 0.5120687197034502,
+            "std_auc": 0.043540672646487824
+        },
+        "Gradient Boosting": {
+            "mean_acc": 0.506268656716418,
+            "std_acc": 0.031455378799568945,
+            "mean_auc": 0.5257485029940121,
+            "std_auc": 0.03302353334214911
+        }
+    },
+    "tuned_cv": {
+        "mean_accuracy": 0.5301492537313433,
+        "std_accuracy": 0.02916220833867416,
+        "best_params": {
+            "clf__max_depth": 3,
+            "clf__min_samples_split": 2,
+            "clf__n_estimators": 50
+        },
+        "holdout_test_accuracy": 0.47560975609756095,
+        "holdout_test_auc": 0.48118679357525285
+    }
+}
